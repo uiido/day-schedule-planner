@@ -36,7 +36,7 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
     document.getElementById("button9").addEventListener("click", savePlan9);
 
      function savePlan9() {
-        localStorage.setItem("hour9", hour9)
+        localStorage.setItem("hour9", hour9.value)
     }
     
     // TODO: Add code to apply the past, present, or future class to each time
