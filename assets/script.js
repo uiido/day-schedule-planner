@@ -13,6 +13,9 @@ var hour15 = document.querySelector('#hour-15');
 var hour16 = document.querySelector('#hour-16');
 var hour17 = document.querySelector('#hour-17');
 
+// Array for hours
+var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
