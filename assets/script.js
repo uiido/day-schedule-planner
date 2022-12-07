@@ -15,6 +15,9 @@ var hour17 = document.querySelector('#hour-17');
 
 var notes9 = document.querySelector('#text9');
 
+// Local storage
+notes9.value = localStorage.getItem('hour9');
+
 // Array for hours
 var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
 
