@@ -14,9 +14,25 @@ var hour16 = document.querySelector('#hour-16');
 var hour17 = document.querySelector('#hour-17');
 
 var notes9 = document.querySelector('#text9');
+var notes10 = document.querySelector('#text10');
+var notes11 = document.querySelector('#text11');
+var notes12 = document.querySelector('#text12');
+var notes13 = document.querySelector('#text13');
+var notes14 = document.querySelector('#text14');
+var notes15 = document.querySelector('#text15');
+var notes16 = document.querySelector('#text16');
+var notes17 = document.querySelector('#text17');
 
 // Local storage
 notes9.value = localStorage.getItem('hour9');
+notes10.value = localStorage.getItem('hour10');
+notes11.value = localStorage.getItem('hour11');
+notes12.value = localStorage.getItem('hour12');
+notes13.value = localStorage.getItem('hour13');
+notes14.value = localStorage.getItem('hour14');
+notes15.value = localStorage.getItem('hour15');
+notes16.value = localStorage.getItem('hour16');
+notes17.value = localStorage.getItem('hour17');
 
 // Array for hours
 var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
@@ -33,10 +49,61 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
     // function? How can DOM traversal be used to get the "hour-x" id of the
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
+
+
+    // Event listeners and buttons for each timeslot
     document.getElementById("button9").addEventListener("click", savePlan9);
 
      function savePlan9() {
         localStorage.setItem("hour9", notes9.value)
+    }
+
+    document.getElementById("button10").addEventListener("click", savePlan10);
+
+     function savePlan10() {
+        localStorage.setItem("hour10", notes10.value)
+    }
+
+    document.getElementById("button11").addEventListener("click", savePlan12);
+
+     function savePlan11() {
+        localStorage.setItem("hour11", notes11.value)
+    }
+
+    document.getElementById("button12").addEventListener("click", savePlan12);
+
+     function savePlan12() {
+        localStorage.setItem("hour12", notes12.value)
+    }
+
+    document.getElementById("button13").addEventListener("click", savePlan13);
+
+     function savePlan13() {
+        localStorage.setItem("hour13", notes13.value)
+    }
+
+    document.getElementById("button14").addEventListener("click", savePlan14);
+
+     function savePlan14() {
+        localStorage.setItem("hour14", notes14.value)
+    }
+
+    document.getElementById("button15").addEventListener("click", savePlan15);
+
+     function savePlan15() {
+        localStorage.setItem("hour15", notes15.value)
+    }
+
+    document.getElementById("button16").addEventListener("click", savePlan16);
+
+     function savePlan16() {
+        localStorage.setItem("hour16", notes16.value)
+    }
+
+    document.getElementById("button17").addEventListener("click", savePlan17);
+
+     function savePlan17() {
+        localStorage.setItem("hour17", notes17.value)
     }
     
     // TODO: Add code to apply the past, present, or future class to each time
