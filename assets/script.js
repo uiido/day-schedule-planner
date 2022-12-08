@@ -35,12 +35,10 @@ notes15.value = localStorage.getItem('hour15');
 notes16.value = localStorage.getItem('hour16');
 notes17.value = localStorage.getItem('hour17');
 
-// Array for hours
-var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
-
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// Clears the local storage at midnight
+if (currentHour == 0) {
+    localStorage.clear();
+}
 
 $(function () {
 
