@@ -1,7 +1,6 @@
 // Sets current date & time
 var $time = $('#currentDay');
-var now = currentHour().toJSON();
-var time = today.getHours();
+var currentHour = dayjs().hour();
 var today = dayjs();
 $('#currentDay').text(today.format('dddd MMM, D YYYY, h:mm'));
 
