@@ -42,60 +42,60 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-// $(function () {
+$(function () {
 
     // Event listeners and local storage functions for each timeslot
     document.getElementById("button9").addEventListener("click", savePlan9);
 
-     function savePlan9() {
+    function savePlan9() {
         localStorage.setItem("hour9", notes9.value)
     }
 
     document.getElementById("button10").addEventListener("click", savePlan10);
 
-     function savePlan10() {
+    function savePlan10() {
         localStorage.setItem("hour10", notes10.value)
     }
 
     document.getElementById("button11").addEventListener("click", savePlan11);
 
-     function savePlan11() {
+    function savePlan11() {
         localStorage.setItem("hour11", notes11.value)
     }
 
     document.getElementById("button12").addEventListener("click", savePlan12);
 
-     function savePlan12() {
+    function savePlan12() {
         localStorage.setItem("hour12", notes12.value)
     }
 
     document.getElementById("button13").addEventListener("click", savePlan13);
 
-     function savePlan13() {
+    function savePlan13() {
         localStorage.setItem("hour13", notes13.value)
     }
 
     document.getElementById("button14").addEventListener("click", savePlan14);
 
-     function savePlan14() {
+    function savePlan14() {
         localStorage.setItem("hour14", notes14.value)
     }
 
     document.getElementById("button15").addEventListener("click", savePlan15);
 
-     function savePlan15() {
+    function savePlan15() {
         localStorage.setItem("hour15", notes15.value)
     }
 
     document.getElementById("button16").addEventListener("click", savePlan16);
 
-     function savePlan16() {
+    function savePlan16() {
         localStorage.setItem("hour16", notes16.value)
     }
 
     document.getElementById("button17").addEventListener("click", savePlan17);
 
-     function savePlan17() {
+    function savePlan17() {
         localStorage.setItem("hour17", notes17.value)
     }
 
@@ -128,48 +128,56 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
     }
 
     // hour 12
-
-    // hour 13
-
-    // hour 14
-
-    // hour 15
-
-    // hour 16
-
-    // hour 17
-
-    // test
-    if (currentHour == 18) {
-        document.getElementById('hour-9').style.backgroundColor = "red";
-    } else if (currentHour < 18) {
-        document.getElementById('hour-9').style.backgroundColor = "Green";
+    if (currentHour == 12) {
+        document.getElementById('hour-12').style.backgroundColor = "red";
+    } else if (currentHour < 12) {
+        document.getElementById('hour-12').style.backgroundColor = "Green";
     } else {
-        document.getElementById('hour-9').style.backgroundColor = "gray";
+        document.getElementById('hour-12').style.backgroundColor = "gray";
     }
 
-    
+    // hour 13
+    if (currentHour == 13) {
+        document.getElementById('hour-13').style.backgroundColor = "red";
+    } else if (currentHour < 13) {
+        document.getElementById('hour-13').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-13').style.backgroundColor = "gray";
+    }
 
-    // TODO: Add a listener for click events on the save button. This code should
-    // use the id in the containing time-block as a key to save the user input in
-    // local storage. HINT: What does `this` reference in the click listener
-    // function? How can DOM traversal be used to get the "hour-x" id of the
-    // time-block containing the button that was clicked? How might the id be
-    // useful when saving the description in local storage?
-    // COMPLETE
-    
-    // TODO: Add code to apply the past, present, or future class to each time
-    // block by comparing the id to the current hour. HINTS: How can the id
-    // attribute of each time-block be used to conditionally add or remove the
-    // past, present, and future classes? How can Day.js be used to get the
-    // current hour in 24-hour time?
-    //
-    
-    // TODO: Add code to get any user input that was saved in localStorage and set
-    // the values of the corresponding textarea elements. HINT: How can the id
-    // attribute of each time-block be used to do this?
-    // COMPLETE
-    
-    // TODO: Add code to display the current date in the header of the page.
-    // COMPLETE
-// });
+    // hour 14
+    if (currentHour == 14) {
+        document.getElementById('hour-14').style.backgroundColor = "red";
+    } else if (currentHour < 14) {
+        document.getElementById('hour-14').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-14').style.backgroundColor = "gray";
+    }
+
+    // hour 15
+    if (currentHour == 15) {
+        document.getElementById('hour-15').style.backgroundColor = "red";
+    } else if (currentHour < 15) {
+        document.getElementById('hour-15').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-15').style.backgroundColor = "gray";
+    }
+
+    // hour 16
+    if (currentHour == 16) {
+        document.getElementById('hour-16').style.backgroundColor = "red";
+    } else if (currentHour < 16) {
+        document.getElementById('hour-16').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-16').style.backgroundColor = "gray";
+    }
+
+    // hour 17
+    if (currentHour == 17) {
+        document.getElementById('hour-17').style.backgroundColor = "red";
+    } else if (currentHour < 17) {
+        document.getElementById('hour-17').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-17').style.backgroundColor = "gray";
+    }
+});
