@@ -1,5 +1,4 @@
 // Sets current date & time
-var $time = $('#currentDay');
 var currentHour = dayjs().hour();
 var today = dayjs();
 $('#currentDay').text(today.format('dddd MMM, D YYYY, h:mm a'));
@@ -102,11 +101,31 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
 
     // functions to change timeslot background based on current time
     // hour 9
-    
+    if (currentHour == 9) {
+        document.getElementById('hour-9').style.backgroundColor = "red";
+    } else if (currentHour < 9) {
+        document.getElementById('hour-9').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-9').style.backgroundColor = "gray";
+    }
 
     // hour 10
+    if (currentHour == 10) {
+        document.getElementById('hour-10').style.backgroundColor = "red";
+    } else if (currentHour < 10) {
+        document.getElementById('hour-10').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-10').style.backgroundColor = "gray";
+    }
 
     // hour 11
+    if (currentHour == 11) {
+        document.getElementById('hour-11').style.backgroundColor = "red";
+    } else if (currentHour < 11) {
+        document.getElementById('hour-11').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-11').style.backgroundColor = "gray";
+    }
 
     // hour 12
 
@@ -127,22 +146,6 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
         document.getElementById('hour-9').style.backgroundColor = "Green";
     } else {
         document.getElementById('hour-9').style.backgroundColor = "gray";
-    }
-
-    if (currentHour == 22) {
-        document.getElementById('hour-10').style.backgroundColor = "red";
-    } else if (currentHour < 22) {
-        document.getElementById('hour-10').style.backgroundColor = "Green";
-    } else {
-        document.getElementById('hour-10').style.backgroundColor = "gray";
-    }
-
-    if (currentHour == 23) {
-        document.getElementById('hour-11').style.backgroundColor = "red";
-    } else if (currentHour < 23) {
-        document.getElementById('hour-11').style.backgroundColor = "Green";
-    } else {
-        document.getElementById('hour-11').style.backgroundColor = "gray";
     }
 
     
