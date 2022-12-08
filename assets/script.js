@@ -2,7 +2,7 @@
 var $time = $('#currentDay');
 var currentHour = dayjs().hour();
 var today = dayjs();
-$('#currentDay').text(today.format('dddd MMM, D YYYY, h:mm'));
+$('#currentDay').text(today.format('dddd MMM, D YYYY, h:mm a'));
 
 // Sets variables for each time slot
 var hour9 = document.querySelector('#hour-9');
