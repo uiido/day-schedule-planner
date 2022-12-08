@@ -102,13 +102,7 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
 
     // functions to change timeslot background based on current time
     // hour 9
-    if ($time == 9) {
-        document.getElementById('hour-9').style.backgroundColor = "gray";
-    } else if (getTime < 9) {
-        document.getElementById('hour-9').style.backgroundColor = "Green";
-    } else {
-        document.getElementById('hour-9').style.backgroundColor = "Red";
-    }
+    
 
     // hour 10
 
@@ -125,6 +119,31 @@ var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour
     // hour 16
 
     // hour 17
+
+    // test
+    if (currentHour == 18) {
+        document.getElementById('hour-9').style.backgroundColor = "red";
+    } else if (currentHour < 18) {
+        document.getElementById('hour-9').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-9').style.backgroundColor = "gray";
+    }
+
+    if (currentHour == 22) {
+        document.getElementById('hour-10').style.backgroundColor = "red";
+    } else if (currentHour < 22) {
+        document.getElementById('hour-10').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-10').style.backgroundColor = "gray";
+    }
+
+    if (currentHour == 23) {
+        document.getElementById('hour-11').style.backgroundColor = "red";
+    } else if (currentHour < 23) {
+        document.getElementById('hour-11').style.backgroundColor = "Green";
+    } else {
+        document.getElementById('hour-11').style.backgroundColor = "gray";
+    }
 
     
 
